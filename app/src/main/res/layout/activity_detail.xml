@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorblue"
+    android:textAlignment="gravity"
+    tools:context=".homescreen.dashboard.DetailActivity">
+
+<!--  <ImageView-->
+<!--      android:id="@+id/imageView11"-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="220dp"-->
+<!--      android:scaleType="fitCenter"-->
+<!--      app:layout_constraintEnd_toEndOf="parent"-->
+<!--      app:layout_constraintStart_toStartOf="parent"-->
+<!--      app:layout_constraintTop_toTopOf="parent"-->
+<!--      app:srcCompat="@drawable/ic_poster" />-->
+
+
+
+  <TextView
+      android:id="@+id/textView16"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="16dp"
+      android:fontFamily="@font/montserrat"
+      android:textColor="@color/white"
+      android:textSize="20sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/videoView"
+      tools:text="Avengers: Infinity War" />
+
+  <TextView
+      android:id="@+id/textView17"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="8dp"
+      android:fontFamily="@font/montserrat"
+      android:text="Action, Sci-fi, Kids"
+      android:textColor="@color/white"
+      android:textSize="14sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+  <TextView
+      android:id="@+id/textView18"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="16dp"
+      android:fontFamily="@font/montserrat"
+      android:text="Storyboard"
+      android:textColor="@color/white"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+  <TextView
+      android:id="@+id/textView19"
+      android:layout_width="344dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="8dp"
+      android:fontFamily="@font/montserrat"
+      android:textColor="@color/white"
+      android:textSize="12sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView18"
+      tools:text="The Avengers must stop Thanos, a mad Titan, and his  army from getting their hands on all the infinity stones.  However, the mad Titan is prepared to go to any lengths  to carry out his insane plan." />
+
+  <TextView
+      android:id="@+id/textView20"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="32dp"
+      android:drawableLeft="@drawable/star_13"
+      android:fontFamily="@font/montserrat"
+      android:text="9.7"
+      android:textColor="@color/white"
+      android:textSize="10sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+  <Button
+      android:id="@+id/button7"
+      android:layout_width="365dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="16dp"
+      android:background="@drawable/shape_rectangle_pink"
+      android:fontFamily="@font/montserrat"
+      android:text="@string/bangku"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/rv_player"
+      android:layout_width="344dp"
+      android:layout_height="131dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="24dp"
+      android:layout_marginEnd="32dp"
+      android:fontFamily="@font/montserrat"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.666"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+  <VideoView
+      android:id="@+id/videoView"
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:layout_marginTop="8dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+  <ImageView
+      android:id="@+id/imageView5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/baseline_keyboard_backspace_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

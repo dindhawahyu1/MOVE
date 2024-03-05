@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "997239069278",
+    "project_id": "movielast1",
+    "storage_bucket": "movielast1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997239069278:android:f288ce1a6a8c3e714af2cf",
+        "android_client_info": {
+          "package_name": "com.example.move"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJDiidxfvJpSkTW2tuB3V6hXeZJT2TyDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

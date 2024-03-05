@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.move"
+    tools:ignore="MissingLeanbackLauncher">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".homescreen.ticket.TiketActivity"
+            android:exported="false" />
+        <activity android:name=".homescreen.dashboard.DetailActivity" />
+        <activity android:name=".checkout.MyWalletActivity" />
+        <activity android:name=".checkout.PaymentSuccessActivity" />
+        <activity android:name=".checkout.CheckOutActivity" />
+        <activity android:name=".checkout.PilihTempatDudukActivity" />
+        <activity android:name=".homescreen.HomeScreenActivity" />
+        <activity android:name=".sign.sign_in.EditProfileActivity" />
+        <activity android:name=".sign.sign_up.SignInPhotoActivity" />
+        <activity android:name=".sign.sign_up.SignUpActivity" />
+        <activity android:name=".sign.sign_in.SignInActivity" />
+        <activity android:name=".onboarding.OnBoardingThreeActivity" />
+        <activity android:name=".onboarding.OnBoardingTwoActivity" />
+        <activity android:name=".onboarding.OnBoardingOneActivity" />
+        <activity
+            android:name=".splashscreen.SplashScreenActivty"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

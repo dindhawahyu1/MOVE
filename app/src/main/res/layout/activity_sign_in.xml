@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorblue"
+    tools:context=".sign.sign_in.SignInActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_mov"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/sign_in_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/username_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/email_title"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_title" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="365dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="#00FFFFFF"
+        android:textSize="14sp"
+        android:fontFamily="@font/montserrat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_title"
+        tools:ignore="MissingConstraints"
+        tools:text="Email"/>
+
+    <TextView
+        android:id="@+id/Password_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/password"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_username"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="365dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="#00FFFFFF"
+        android:textSize="14sp"
+        android:fontFamily="@font/montserrat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password_title"
+        tools:text="Password"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="365dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/shape_rectangle_pink"
+        android:text="@string/signin1"
+        android:fontFamily="@font/montserrat"
+        app:layout_constraintBottom_toTopOf="@+id/btn_daftar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="365dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/shape_rectangle_blue_grey"
+        android:text="@string/signup1"
+        android:fontFamily="@font/montserrat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/resetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/lupa_password"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
